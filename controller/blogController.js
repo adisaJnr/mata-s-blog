@@ -1,5 +1,19 @@
 const {Blog} = require('../model/blog')
 
+const home =  async (req,res)=>{
+    try {
+       res.json({
+        message:"wow you have successfully miss your way😎😎😊😊"
+       })
+       } catch (error) {
+        res.json({
+            error,
+                message: "You have got some err" 
+        })
+       }
+
+}
+
 const postBlog = async(req,res)=>{
    try {
     const body = req.body;
