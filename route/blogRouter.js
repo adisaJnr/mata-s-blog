@@ -7,6 +7,7 @@ const blogRouter = express.Router()
 
 blogRouter.post('/post',controller.postBlog)
 blogRouter.get('/getpost/:_id',controller.getBlog)
+blogRouter.get('/',controller.home)
 
 
 module.exports = {

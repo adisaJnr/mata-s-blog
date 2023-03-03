@@ -54,5 +54,6 @@ const getBlog = async(req,res)=>{
 }
 module.exports = {
     postBlog,
-    getBlog
+    getBlog,
+    home
 }
